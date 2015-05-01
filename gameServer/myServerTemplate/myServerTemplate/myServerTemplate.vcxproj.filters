@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{80df527b-2386-4696-ae5d-008e79a2e6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\socket">
+      <UniqueIdentifier>{6c92570c-bf0c-4c6c-8e11-c5eda8982dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\head">
+      <UniqueIdentifier>{283dcba2-092d-49e8-9cde-fec803bd3a55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\socket\myMessageHander.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\socket\myMessageManager.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\socket\SmartMessageData.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\socket\SocketServer.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\socket\WriteDataToBufferUtils.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\main.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\socket\mySocketUtils.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\socket\myMessageHander.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\socket\myMessageManager.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\socket\SmartMessageData.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\socket\SocketServer.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\socket\WriteDataToBufferUtils.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\head\head.h">
+      <Filter>Classes\head</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\socket\mySocketUtils.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
