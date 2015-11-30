@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\socket">
+      <UniqueIdentifier>{12f8c9fc-d202-4e63-ab7a-f3cfb6d7c162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msgBody">
+      <UniqueIdentifier>{c19fa48a-89cb-4b1f-9d4e-d81f7b623279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\config">
+      <UniqueIdentifier>{94dc3ca2-1093-48c5-8070-034159664957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Dialog">
+      <UniqueIdentifier>{1fa1bb52-9021-481f-864d-71f705cf654a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{5e2710a4-9d3f-40d3-91a8-94910a5ed304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resLoad">
+      <UniqueIdentifier>{257a6adf-b554-4581-a2d7-a9833e48e87f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resLoad\res">
+      <UniqueIdentifier>{409f6674-db45-45a1-9dd9-2253aad52118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resLoad\load">
+      <UniqueIdentifier>{b69a24fb-a73b-46d7-8eeb-d5621e336071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{173199d1-25c6-4744-9433-4cab952b55ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fight">
+      <UniqueIdentifier>{52e1523e-ac5e-4e5b-a1d8-095d5a309442}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\myMessageHander.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\myMessageManager.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\SmartMessageData.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\SocketClient.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\WriteDataToBufferUtils.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\config\ConfigConstant.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\config\ConfigFromXml.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\config\ConfigManager.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\config\ConfigUtils.cpp">
+      <Filter>src\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Dialog\BaseLayer.cpp">
+      <Filter>src\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Dialog\movetoDisappear.cpp">
+      <Filter>src\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\jishiqi.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\MyLog.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\myStringUtils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Tools.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\FriendRes.cpp">
+      <Filter>src\resLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\ResSingleton.cpp">
+      <Filter>src\resLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\res\ArmatureRes.cpp">
+      <Filter>src\resLoad\res</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\res\PlistRes.cpp">
+      <Filter>src\resLoad\res</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\res\TextureRes.cpp">
+      <Filter>src\resLoad\res</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\load\LoadCount.cpp">
+      <Filter>src\resLoad\load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\resLoad\load\recyleManager.cpp">
+      <Filter>src\resLoad\load</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\BaseSceneLayer.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\flashScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scene\LoginScene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\fight\fightNode.cpp">
+      <Filter>src\fight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\socket\mySocketUtil.cpp">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\msgBody\msgBody.h">
+      <Filter>src\msgBody</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\myMessageHander.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\myMessageManager.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\SmartMessageData.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\SocketClient.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\WriteDataToBufferUtils.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\ConfigConstant.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\ConfigFromXml.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\ConfigManager.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\ConfigUtils.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\ItemConfig.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\LanguageConfig.h">
+      <Filter>src\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Dialog\BaseLayer.h">
+      <Filter>src\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Dialog\moveToDisappear.h">
+      <Filter>src\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\jishiqi.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\MyLog.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\myStringUtils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Tools.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\FriendRes.h">
+      <Filter>src\resLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\ResSingleton.h">
+      <Filter>src\resLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\ArmatureRes.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\IRes.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\LruCache.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\OnResLoadListener.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\PlistRes.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\res\TextureRes.h">
+      <Filter>src\resLoad\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\load\LoadCount.h">
+      <Filter>src\resLoad\load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\load\OnLoadListener.h">
+      <Filter>src\resLoad\load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\resLoad\load\recyleManager.h">
+      <Filter>src\resLoad\load</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\BaseSceneLayer.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\flashScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scene\LoginScene.h">
+      <Filter>src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fight\fightNode.h">
+      <Filter>src\fight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\mySocketUtil.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

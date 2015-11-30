@@ -6,15 +6,7 @@ public:
 	static const int ACTION_TEST1 = 1111;
 	static const int ACTION_TEST2 = 1112;
 };
-template <class T>
-void SEND_MSGBODY_TO_SERVER(T msgBody) 
-{
-	SmartMessageData * data = SmartMessageData::create();
-	data->retain();
-	data<<msgBody;
-	data->setAction(msgBody.CMD_ID);
-	myMessageManager::getInstance()->sendMessage(data);
-}
+
 
 struct msgBody_sample_1
 {

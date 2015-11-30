@@ -33,6 +33,9 @@
     <ClCompile Include="Classes\socket\mySocketUtils.cpp">
       <Filter>Classes\socket</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\hello.cpp">
+      <Filter>Classes\socket</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\socket\myMessageHander.h">
@@ -55,6 +58,12 @@
     </ClInclude>
     <ClInclude Include="Classes\socket\mySocketUtils.h">
       <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\hello.h">
+      <Filter>Classes\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\head\msgBody.h">
+      <Filter>Classes\head</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

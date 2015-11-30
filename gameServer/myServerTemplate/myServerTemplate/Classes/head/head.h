@@ -43,5 +43,4 @@ static void log(const char * lpFormat, ...)
 	std::cout<<buff<<std::endl;
 }
 
-
 #endif

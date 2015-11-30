@@ -1,7 +1,5 @@
 #include "HelloWorldScene.h"
-#include "socket\myMessageManager.h"
 #include "msgBody\msgBody.h"
-#include "socket\mySocketUtil.h"
 
 
 #include "ui\CocosGUI.h"
@@ -79,10 +77,7 @@ bool HelloWorld::init()
     this->addChild(sprite, 0);
 
 	mySocketUtil::getInstance()->connectToServer("127.0.0.1",20000,nullptr);
-
-	myMessageManager::getInstance()->rigeterMessageListener(CMD_Constant::ACTION_TEST1,this);
-
-	this->addToMap(CMD_Constant::ACTION_TEST1);
+	this->registerListener(CMD_Constant::ACTION_TEST1);
 
 	std::string str = "uvukblijgig";// ConfigUtils::getLanguageById(1);
 	RichElementText * ttf = RichElementText::create(1, Color3B(255, 0, 0), 255, str, "Arial", 20);

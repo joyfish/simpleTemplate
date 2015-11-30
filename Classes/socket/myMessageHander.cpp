@@ -1,20 +1,12 @@
 #include "myMessageHander.h"
+#include "socket\myMessageManager.h"
 
-bool myMessageHander::isContainAction(int action)
+void myMessageHander::registerListener(int actionId)
 {
-	std::map<int, int>::iterator itor = _actionValueMap.begin();
-	for (; itor != _actionValueMap.end(); itor++)
-	{
-		if (itor->first == action&&itor->second== action)
-		{
-			return true;
-		}
-	}
-
-	return false;
+	myMessageManager::getInstance()->rigeterMessageListener(actionId, this);
 }
 
-void myMessageHander::addToMap(int action)
+void myMessageHander::destoryListener(int actionId)
 {
-	_actionValueMap.insert(std::pair<int,int>(action, action));
+	myMessageManager::getInstance()->destroyrMessageListener(actionId, this);
 }

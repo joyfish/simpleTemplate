@@ -88,9 +88,9 @@ void mySocketUtil::onMessage(SocketClient* ws,const char* data, int count)
 			int msgBodyLen = count - 4;
 
 			char * msgBody = new char[msgBodyLen+1];
-			for (int i = 12; i < count; i++)
+			for (int i = 4; i < count; i++)
 			{
-				msgBody[i - 12] = data[i];
+				msgBody[i - 4] = data[i];
 			}
 			msgBody[msgBodyLen] = '\0';
 

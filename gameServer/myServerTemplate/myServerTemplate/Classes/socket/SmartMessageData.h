@@ -14,6 +14,21 @@ public:
 	SmartMessageData(int action);
 	~SmartMessageData(void);    
 
+	static SmartMessageData* create()
+	{
+		SmartMessageData *pRet = new SmartMessageData();
+		if (pRet && pRet->init())
+		{
+			return pRet;
+		}
+		else
+		{
+			delete pRet;
+			pRet = NULL;
+			return NULL;
+		}
+	}
+
 	static SmartMessageData* create(int action) 
 	{ 
 		SmartMessageData *pRet = new SmartMessageData(action); 
@@ -28,6 +43,8 @@ public:
 			return NULL; 
 		} 
 	}
+
+	void retain() {}
 
 	bool init(){return true;}
 

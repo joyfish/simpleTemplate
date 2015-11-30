@@ -1,5 +1,4 @@
 #include "LoginScene.h"
-#include "socket\myMessageManager.h"
 #include "Dialog\moveToDisappear.h"
 #include "msgBody\msgBody.h"
 #include "ui\UIRichText.h"
@@ -21,15 +20,15 @@ LoginScene* LoginScene::createScene()
 void LoginScene::onEnter()
 {
 	BaseSceneLayer::onEnter();
-	myMessageManager::getInstance()->rigeterMessageListener(CMD_Constant::ACTION_TEST1, this);
-	myMessageManager::getInstance()->rigeterMessageListener(CMD_Constant::ACTION_TEST2, this);
+	this->registerListener(CMD_Constant::ACTION_TEST1);
+	this->registerListener(CMD_Constant::ACTION_TEST2);
 
 }
 void LoginScene::onExit()
 {
 	BaseSceneLayer::onExit();
-	myMessageManager::getInstance()->destroyrMessageListener(CMD_Constant::ACTION_TEST1, this);
-	myMessageManager::getInstance()->destroyrMessageListener(CMD_Constant::ACTION_TEST2, this);
+	this->destoryListener(CMD_Constant::ACTION_TEST1);
+	this->destoryListener(CMD_Constant::ACTION_TEST2);
 
 }
 
@@ -120,8 +119,7 @@ void LoginScene::receiveMessageFromServer(SmartMessageData * data)
 //这个虚函数作用是筛选消息接受者
 void LoginScene::setActionMap()
 {
-	this->addToMap(CMD_Constant::ACTION_TEST1);
-	this->addToMap(CMD_Constant::ACTION_TEST2);
+	
 }
 
 void LoginScene::buttonclick(Ref*target, Ref * data)

@@ -55,7 +55,11 @@ void myMessageManager::postReceiveMessage(SmartMessageData * msgData)
 	for (; itor != _listenerMap.end(); itor++)
 	{
 		myMessageHander * hander = itor->second;
-		if (hander->isContainAction(msgData->getAction()))
+		/*if (hander->isContainAction(msgData->getAction()))
+		{
+			hander->receiveMessageFromServer(msgData);
+		}*/
+		if (msgData->getAction() == itor->first)
 		{
 			hander->receiveMessageFromServer(msgData);
 		}
