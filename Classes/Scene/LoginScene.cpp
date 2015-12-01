@@ -27,9 +27,7 @@ void LoginScene::onEnter()
 void LoginScene::onExit()
 {
 	BaseSceneLayer::onExit();
-	this->destoryListener(CMD_Constant::ACTION_TEST1);
-	this->destoryListener(CMD_Constant::ACTION_TEST2);
-
+	
 }
 
 void LoginScene::initData()
@@ -72,7 +70,7 @@ void LoginScene::initView()
 }
 
 
-//·¢ÏûÏ¢µÄ»°£¬ÖØÔØÕâ¸öº¯Êı¾ÍĞĞÁË
+//å‘æ¶ˆæ¯çš„è¯ï¼Œé‡è½½è¿™ä¸ªå‡½æ•°å°±è¡Œäº†
 void LoginScene::sendMessageToServer(int actionId)
 {
 	
@@ -98,7 +96,7 @@ void LoginScene::sendMessageToServer(int actionId)
 
 }
 
-//Õâ¸öÊÇÊÕÏûÏ¢µÄĞéº¯Êı
+//è¿™ä¸ªæ˜¯æ”¶æ¶ˆæ¯çš„è™šå‡½æ•°
 void LoginScene::receiveMessageFromServer(SmartMessageData * data)
 {
 	if(!data)
@@ -116,7 +114,7 @@ void LoginScene::receiveMessageFromServer(SmartMessageData * data)
 	}
 }
 
-//Õâ¸öĞéº¯Êı×÷ÓÃÊÇÉ¸Ñ¡ÏûÏ¢½ÓÊÜÕß
+//è¿™ä¸ªè™šå‡½æ•°ä½œç”¨æ˜¯ç­›é€‰æ¶ˆæ¯æ¥å—è€…
 void LoginScene::setActionMap()
 {
 	
